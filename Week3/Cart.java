@@ -36,6 +36,18 @@ public class Cart {
         }
         System.out.println("The disc has been added");
     }
+    void printCart() {
+        float sum = 0;
+        System.out.println("************************CART*************************");
+        System.out.println("Odered Items:");
+        for(int i = 0; i < qtyOrdered; i++) {
+            float cost = itemOrdered[i].getCost();
+            System.out.printf("%d.DVD - [Title: %s] - [Category: %s] - [Director: %s] - [Length: %d] - [Price: %f $] \n", i+1, itemOrdered[i].getTitle(), itemOrdered[i].getCategory(), itemOrdered[i].getDirector(), itemOrdered[i].getLength(), cost);
+            sum += cost;
+        }
+        System.out.printf("Total cost: [%f $] \n", sum);
+        System.out.println("******************************************************");
+    }
 
     public int getQtyOrdered() {
         return qtyOrdered;
