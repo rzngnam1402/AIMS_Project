@@ -1,0 +1,26 @@
+package hust.soict.dsai.lab01;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class GarbageCreator {
+    public static void main(String[] args) throws IOException {
+        FileReader input = null;
+        long start = System.currentTimeMillis();
+        String outputString = "";
+        try {
+            input = new FileReader("");
+
+            int c;
+            while ((c = input.read()) != -1) {
+                outputString += c;
+            }
+            System.out.println(System.currentTimeMillis() - start);
+        } finally {
+            if (input != null) {
+                input.close();
+            }
+        }
+        System.out.println("String is: " + outputString);
+    }
+}
