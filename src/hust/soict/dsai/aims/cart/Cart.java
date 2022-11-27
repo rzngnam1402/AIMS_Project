@@ -1,9 +1,12 @@
+package hust.soict.dsai.aims.cart;
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
     private final DigitalVideoDisc[] itemOrdered = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
     private int qtyOrdered = 0;
 
-    void addDigitalVideoDisc(DigitalVideoDisc disc) {
+    public void addDigitalVideoDisc(DigitalVideoDisc disc) {
         if (qtyOrdered == MAX_NUMBERS_ORDERED) {
             System.out.println("The cart is already full");
         } else {
@@ -76,7 +79,7 @@ public class Cart {
         return qtyOrdered;
     }
 
-    void removeDigitalVideoDisc(DigitalVideoDisc disc) {
+    public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         if (qtyOrdered == 0) {
             System.out.println("The cart is null");
         } else {
@@ -91,7 +94,7 @@ public class Cart {
         }
     }
 
-    float totalCost() {
+    public float totalCost() {
         float sum = 0;
         for (int i = 0; i < qtyOrdered; i++) {
             sum += this.itemOrdered[i].getCost();
