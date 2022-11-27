@@ -36,17 +36,40 @@ public class Cart {
         }
         System.out.println("The disc has been added");
     }
+
     void printCart() {
         float sum = 0;
         System.out.println("************************CART*************************");
         System.out.println("Odered Items:");
-        for(int i = 0; i < qtyOrdered; i++) {
+        for (int i = 0; i < qtyOrdered; i++) {
             float cost = itemOrdered[i].getCost();
-            System.out.printf("%d.DVD - [Title: %s] - [Category: %s] - [Director: %s] - [Length: %d] - [Price: %f $] \n", i+1, itemOrdered[i].getTitle(), itemOrdered[i].getCategory(), itemOrdered[i].getDirector(), itemOrdered[i].getLength(), cost);
+            System.out.printf("%d.DVD - [Title: %s] - [Category: %s] - [Director: %s] - [Length: %d] - [Price: %f $] \n", i + 1, itemOrdered[i].getTitle(), itemOrdered[i].getCategory(), itemOrdered[i].getDirector(), itemOrdered[i].getLength(), cost);
             sum += cost;
         }
         System.out.printf("Total cost: [%f $] \n", sum);
         System.out.println("******************************************************");
+    }
+
+    public void searchById(int id) {
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (itemOrdered[i].getId() == id) {
+                System.out.println("DVD found : ");
+                System.out.printf("[Id: %d] - [Title: %s] - [Category: %s] - [Director: %s] - [Length: %d] - [Price: %f $]\n", itemOrdered[i].getId(), itemOrdered[i].getTitle(), itemOrdered[i].getCategory(), itemOrdered[i].getDirector(), itemOrdered[i].getLength(), itemOrdered[i].getCost());
+                return;
+            }
+        }
+        System.out.println("The DVD is not found");
+    }
+
+    public void searchTitleDVDs(String title) {
+        System.out.println("DVD found: ");
+        for (int i = 0; i < qtyOrdered; i++) {
+            if (itemOrdered[i].getTitle().equalsIgnoreCase(title)) {
+                System.out.printf("[Id: %d] - [Title: %s] - [Category: %s] - [Director: %s] - [Length: %d] - [Price: %f $]\n", itemOrdered[i].getId(), itemOrdered[i].getTitle(), itemOrdered[i].getCategory(), itemOrdered[i].getDirector(), itemOrdered[i].getLength(), itemOrdered[i].getCost());
+                return;
+            }
+        }
+        System.out.println("The DVD is not found");
     }
 
     public int getQtyOrdered() {
