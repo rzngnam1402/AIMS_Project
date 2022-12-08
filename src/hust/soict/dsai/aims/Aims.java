@@ -1,6 +1,9 @@
 package hust.soict.dsai.aims;
+
 import hust.soict.dsai.aims.cart.Cart;
 import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Book;
+
 public class Aims {
     public static void main(String[] args) {
         //Create a new cart
@@ -39,5 +42,9 @@ public class Aims {
         System.out.println(anOrder.getQtyOrdered());
         System.out.println("Total Cost is: ");
         System.out.println(anOrder.totalCost());
+
+        Book newOrder = new Book("Harry Potter and the Order of the phoenix", "fantasy", 10);
+        newOrder.addAuthor("J.K.Rowling");
+        System.out.println(newOrder.getCost());
     }
 }
