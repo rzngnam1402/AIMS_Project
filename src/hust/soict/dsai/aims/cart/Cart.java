@@ -12,14 +12,14 @@ public class Cart {
             System.out.println("The medium is already existed");
         } else {
             itemOrdered.add(medium);
-            System.out.println(medium + " has been added");
+            System.out.println(medium.getTitle() + " has been added");
         }
     }
 
     public void removeMedia(Media medium) {
         if (itemOrdered.contains(medium)) {
             itemOrdered.remove(medium);
-            System.out.println(medium + " has been removed");
+            System.out.println(medium.getTitle() + " has been removed");
         } else {
             System.out.println("The medium is not existed");
         }
