@@ -22,4 +22,11 @@ public class Track implements Playable {
         System.out.println("Playing DVD: " + this.getTitle());
         System.out.println("DVD length: " + this.getLength());
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        // TODO Auto-generated method stub
+        return this.length == ((Track) obj).length && this.title == ((Track) obj).title;
+    }
+
 }
