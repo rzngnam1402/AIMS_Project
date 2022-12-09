@@ -12,14 +12,6 @@ public class DigitalVideoDisc extends Disc implements Playable {
         this.id = nbDigitalVideoDisc;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
-    }
-
-    public void setLength(int length) {
-        this.length = length;
-    }
-
     @Override
     public void play() {
         System.out.println("Playing DVD: " + this.getTitle());
