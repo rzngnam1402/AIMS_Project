@@ -1,6 +1,6 @@
 package hust.soict.dsai.aims.media;
 
-public class Disc extends Media{
+public class Disc extends Media {
     private static int nbDisc = 0;
     private int id;
     private int length;
@@ -18,5 +18,11 @@ public class Disc extends Media{
 
     public String getDirector() {
         return director;
+    }
+
+    @Override
+    public String toString() {
+        return "DVD - " + this.getTitle() + " - " + this.getCategory() + " - " + this.getDirector() + " - "
+                + this.getLength() + " : " + this.getCost() + "$";
     }
 }

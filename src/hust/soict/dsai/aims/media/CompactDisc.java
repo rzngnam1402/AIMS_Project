@@ -50,6 +50,19 @@ public class CompactDisc extends Disc implements Playable {
     }
 
     @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        StringBuffer str = new StringBuffer();
+
+        str.append("(Compact Dvd): " + this.getTitle() + " - " + this.getCategory() + " - " + this.getDirector() + " - "
+                + this.getLength() + " : " + this.getCost() + "$: Track: ");
+        for (Track track : tracks) {
+            str.append(track.toString() + ", ");
+        }
+        return str.toString();
+    }
+
+    @Override
     public void play() {
         System.out.println("Artist: " + this.artist);
         for (Track track : tracks) {

@@ -29,4 +29,8 @@ public class Track implements Playable {
         return this.length == ((Track) obj).length && this.title == ((Track) obj).title;
     }
 
+    @Override
+    public String toString() {
+        return this.getTitle() + " - " + this.getLength();
+    }
 }
