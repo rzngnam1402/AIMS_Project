@@ -1,38 +1,33 @@
 package hust.soict.dsai.aims.store;
 
-import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
+
+import java.util.ArrayList;
 
 public class Store {
-    public static final int STORE_LIMITS = 50;
-    private DigitalVideoDisc itemsInStore[] = new DigitalVideoDisc[STORE_LIMITS];
-    private int qtyStore = 0;
+    private ArrayList<Media> itemsInStore = new ArrayList<>();
 
     public int getQtyOrdered() {
-        return qtyStore;
+        return itemsInStore.size();
     }
 
-    public void addDVD(DigitalVideoDisc disc) {
-        if (qtyStore == STORE_LIMITS) {
-            System.out.println("The store is already full");
+    public void addMedia(Media medium) {
+        if (itemsInStore.contains(medium)) {
+            System.out.println("The medium is already existed");
         } else {
-            this.itemsInStore[qtyStore] = disc;
-            qtyStore++;
-            System.out.println("The disc has been added to store");
+            itemsInStore.add(medium);
+            System.out.println(medium.getTitle() + " has been added");
         }
     }
 
-    public void removeDVD(DigitalVideoDisc disc) {
-        if (qtyStore == 0) {
-            System.out.println("The store is null");
+    public void removeMedia(Media medium) {
+        if (itemsInStore.contains(medium)) {
+            itemsInStore.remove(medium);
+            System.out.println(medium.getTitle() + " has been removed");
         } else {
-            for (int i = 0; i < qtyStore; i++) {
-                if (this.itemsInStore[i] == disc) {
-                    this.itemsInStore[i] = this.itemsInStore[qtyStore - 1];
-                    this.itemsInStore[qtyStore - 1] = null;
-                    qtyStore--;
-                }
-            }
-            System.out.println("The disc has been deleted from store");
+            System.out.println("The medium is not existed");
         }
     }
+
+
 }
