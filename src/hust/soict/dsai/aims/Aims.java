@@ -1,7 +1,7 @@
 package hust.soict.dsai.aims;
 
 import hust.soict.dsai.aims.cart.Cart;
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
 import hust.soict.dsai.aims.media.Book;
 
 public class Aims {
@@ -19,19 +19,19 @@ public class Aims {
         anOrder.addDigitalVideoDisc(dvd2);
         System.out.println(anOrder.getQtyOrdered());
 
-        DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
-        anOrder.addDigitalVideoDisc(dvd3);
-        System.out.println(anOrder.getQtyOrdered());
+//        DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
+//        anOrder.addDigitalVideoDisc(dvd3);
+//        System.out.println(anOrder.getQtyOrdered());
 
         //print total cost of the items in the cart
         System.out.println("Total Cost is: ");
         System.out.println(anOrder.totalCost());
 
         //delete DVD from the cart
-        anOrder.removeDigitalVideoDisc(dvd3);
-        System.out.println(anOrder.getQtyOrdered());
-        System.out.println("Total Cost is: ");
-        System.out.println(anOrder.totalCost());
+//        anOrder.removeDigitalVideoDisc(dvd3);
+//        System.out.println(anOrder.getQtyOrdered());
+//        System.out.println("Total Cost is: ");
+//        System.out.println(anOrder.totalCost());
 
         anOrder.removeDigitalVideoDisc(dvd2);
         System.out.println(anOrder.getQtyOrdered());
@@ -41,10 +41,10 @@ public class Aims {
         anOrder.removeDigitalVideoDisc(dvd1);
         System.out.println(anOrder.getQtyOrdered());
         System.out.println("Total Cost is: ");
-        System.out.println(anOrder.totalCost());
+        System.out.println(anOrder.totalCost() + "\n");
 
         Book newOrder = new Book("Harry Potter and the Order of the phoenix", "fantasy", 10);
         newOrder.addAuthor("J.K.Rowling");
-        System.out.println(newOrder.getCost());
+        System.out.println("The book cost is:" + " " + newOrder.getCost());
     }
 }

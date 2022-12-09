@@ -1,6 +1,6 @@
 package hust.soict.dsai.test.store;
 
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
 import hust.soict.dsai.aims.store.Store;
 
 public class StoreTest {
@@ -18,13 +18,13 @@ public class StoreTest {
         newStore.addDVD(dvd2);
         System.out.println("Dvd numbers is: " + newStore.getQtyOrdered());
 
-        DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
-        newStore.addDVD(dvd3);
-        System.out.println("Dvd numbers is: " + newStore.getQtyOrdered());
+//        DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
+//        newStore.addDVD(dvd3);
+//        System.out.println("Dvd numbers is: " + newStore.getQtyOrdered());
 
-        //delete DVD from the store
-        newStore.removeDVD(dvd3);
-        System.out.println("Dvd numbers is: " + newStore.getQtyOrdered());
+//        //delete DVD from the store
+//        newStore.removeDVD(dvd3);
+//        System.out.println("Dvd numbers is: " + newStore.getQtyOrdered());
 
         newStore.removeDVD(dvd2);
         System.out.println("Dvd numbers is: " + newStore.getQtyOrdered());
