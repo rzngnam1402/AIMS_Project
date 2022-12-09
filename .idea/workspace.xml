@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c2d4172-21d4-448e-8ec1-5a72e3226e2d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/utils/MediaComparatorByCostTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/utils/MediaComparatorByTitleCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/CompactDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/CompactDisc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/DigitalVideoDisc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Disc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Disc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Track.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
