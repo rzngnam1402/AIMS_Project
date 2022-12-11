@@ -70,12 +70,14 @@ public class Aims {
             }
             if (choice == 3) {
                 cart.printCart();
+                handleCartMenu(cart);
             }
             if (choice == 0) {
                 break;
             }
         }
     }
+
     private static void updateStore(Store store) {
         System.out.println("Delete a media from store");
         System.out.print("Enter title of media: ");
@@ -126,6 +128,68 @@ public class Aims {
         }
     }
 
+    private static void handleCartMenu(Cart cart) {
+        while (true) {
+            cartMenu();
+            Scanner input = new Scanner(System.in);
+            int choice = input.nextInt();
+            if (choice == 1) {
+                System.out.print("Filter medias in cart by id/title ? (0:1): ");
+                int option = input.nextInt();
+                if (option == 1) {
+                    System.out.print("Enter title: ");
+                    input.nextLine();
+                    String title = input.nextLine();
+                    cart.filterByTitle(title);
+                } else {
+                }
+            }
+            if (choice == 2) {
+                System.out.print("Sort medias in cart by title/cost ? (0:1): ");
+                int option = input.nextInt();
+                if (option == 1) {
+                    cart.sortCartByCost();
+                    cart.printCart();
+                } else {
+                    cart.sortCartByTitle();
+                    cart.printCart();
+                }
+            }
+            if (choice == 3) {
+                System.out.print("Enter title of media: ");
+                input.nextLine();
+                String title = input.nextLine();
+                Media result = cart.searchCart(title);
+                if (result != null) {
+                    cart.removeMedia(result);
+                    System.out.println("Deleted " + result.getTitle());
+                    cart.printCart();
+                } else {
+                    System.out.println("Not found");
+                }
+            }
+            if (choice == 4) {
+                System.out.print("Enter title of media: ");
+                input.nextLine();
+                String title = input.nextLine();
+                Media result = cart.searchCart(title);
+                if (result != null) {
+                    result.play();
+                } else {
+                    System.out.println("Not found");
+                }
+            }
+            if (choice == 5) {
+                System.out.println("An order is created!");
+                cart.clearCart();
+            }
+            if (choice == 0) {
+                System.out.println("Exit cart view");
+                break;
+            }
+        }
+    }
+
     private static void viewStore(Store store, Cart cart) {
         store.printStore();
         while (true) {
@@ -167,7 +231,7 @@ public class Aims {
                 if (result != null) {
                     result.play();
                 } else {
-                    System.out.println("Not found");
+                    System.out.println("Can not found media");
                 }
             }
             if (choice == 4) {
