@@ -33,7 +33,7 @@ public class Cart {
         return sum;
     }
 
-    void printCart() {
+    public void printCart() {
         System.out.println("************************CART*************************");
         System.out.println("Ordered Items:");
         for (Media medium : itemOrdered) {

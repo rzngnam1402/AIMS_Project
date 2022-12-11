@@ -25,4 +25,9 @@ public class Disc extends Media {
         return "DVD - " + this.getTitle() + " - " + this.getCategory() + " - " + this.getDirector() + " - "
                 + this.getLength() + " : " + this.getCost() + "$";
     }
+
+    @Override
+    public void play() {
+        // TODO Auto-generated method stub
+    }
 }

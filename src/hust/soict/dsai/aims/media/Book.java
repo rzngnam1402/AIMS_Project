@@ -45,4 +45,9 @@ public class Book extends Media {
         }
         return str.toString() + ": " + this.getCost() + "$";
     }
+
+    public void play() {
+        System.out.println("Book doesn't play");
+    }
+
 }
