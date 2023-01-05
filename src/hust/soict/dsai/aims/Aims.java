@@ -3,6 +3,7 @@ package hust.soict.dsai.aims;
 import hust.soict.dsai.aims.cart.Cart;
 import hust.soict.dsai.aims.media.*;
 import hust.soict.dsai.aims.store.Store;
+import hust.soict.dsai.screen.StoreScreen;
 
 import java.util.Scanner;
 
@@ -58,24 +59,26 @@ public class Aims {
         Store store = new Store();
         initializeData(store);
 
-        while (true) {
-            showMenu();
-            Scanner input = new Scanner(System.in);
-            int choice = input.nextInt();
-            if (choice == 1) {
-                viewStore(store, cart);
-            }
-            if (choice == 2) {
-                updateStore(store);
-            }
-            if (choice == 3) {
-                cart.printCart();
-                handleCartMenu(cart);
-            }
-            if (choice == 0) {
-                break;
-            }
-        }
+        StoreScreen newScreen = new StoreScreen(store, cart);
+
+//        while (true) {
+//            showMenu();
+//            Scanner input = new Scanner(System.in);
+//            int choice = input.nextInt();
+//            if (choice == 1) {
+//                viewStore(store, cart);
+//            }
+//            if (choice == 2) {
+//                updateStore(store);
+//            }
+//            if (choice == 3) {
+//                cart.printCart();
+//                handleCartMenu(cart);
+//            }
+//            if (choice == 0) {
+//                break;
+//            }
+//        }
     }
 
     private static void updateStore(Store store) {
@@ -141,7 +144,6 @@ public class Aims {
                     input.nextLine();
                     String title = input.nextLine();
                     cart.filterByTitle(title);
-                } else {
                 }
             }
             if (choice == 2) {
