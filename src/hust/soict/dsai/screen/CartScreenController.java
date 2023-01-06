@@ -182,7 +182,7 @@ public class CartScreenController {
 
     @FXML
     void orderBtnPressed(ActionEvent event) {
-        cart.emptyCart();
+        cart.clearCart();
         totalCostLabel.setText(String.format("%.2f", cart.totalCost()) + "$");
 
         JFrame f = new JFrame();

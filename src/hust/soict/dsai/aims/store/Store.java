@@ -9,6 +9,7 @@ public class Store {
     // DigitalVideoDisc itemsInStore[];
     private final ObservableList<Media> itemsInStore = FXCollections.observableArrayList();
 
+
     public Store() {
 
     }

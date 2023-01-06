@@ -14,9 +14,7 @@ public abstract class Media {
     private String title;
     private String category;
     private float cost;
-
     public Media() {
-
     }
 
     public Media(String title, String category, float cost) {
@@ -63,9 +61,7 @@ public abstract class Media {
             try {
                 String title = ((Media) o).getTitle();
                 if (this.isMatch(title)) return true;
-            } catch (NullPointerException e) {
-                e.printStackTrace();
-            } catch (ClassCastException e) {
+            } catch (NullPointerException | ClassCastException e) {
                 e.printStackTrace();
             }
         }

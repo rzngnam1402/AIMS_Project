@@ -32,7 +32,7 @@ public class Cart {
         }
     }
 
-    public void addMedia(Media mediaList[]) throws LimitExceededException {
+    public void addMedia(Media[] mediaList) throws LimitExceededException {
         if (itemsOrdered.size() + mediaList.length >= MAX_NUMBERS_ORDERED) {
             System.out.println("Not enough space left to add " + mediaList.length + " items!");
             throw new LimitExceededException("ERROR: the number of media has reached its limit!");
@@ -210,7 +210,7 @@ public class Cart {
         return null;
     }
 
-    public void emptyCart() {
+    public void clearCart() {
         this.itemsOrdered.clear();
     }
 }

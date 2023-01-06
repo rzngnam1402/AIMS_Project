@@ -47,10 +47,10 @@ public class Book extends Media {
 
     @Override
     public String toString() {
-        StringBuffer str = new StringBuffer();
-        str.append("(Book): " + this.getTitle() + " - " + this.getCategory() + " - ");
+        StringBuilder str = new StringBuilder();
+        str.append("(Book): ").append(this.getTitle()).append(" - ").append(this.getCategory()).append(" - ");
         for (String author : authors) {
-            str.append(author + ", ");
+            str.append(author).append(", ");
         }
         return str.toString() + ": " + this.getCost() + "$";
     }

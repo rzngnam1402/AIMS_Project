@@ -270,7 +270,7 @@ public class Aims {
                 case 5:
                     if (cart.getNumberOfOrderedItems() != 0) {
                         hasPlacedOrder = true;
-                        cart.emptyCart();
+                        cart.clearCart();
                         System.out.println("Your order has been set!");
                     } else System.out.println("Your cart is empty!");
                     break;
