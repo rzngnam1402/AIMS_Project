@@ -18,6 +18,15 @@ public class Book extends Media {
         this.id = nbBook;
     }
 
+    public Book(String title, String category, float cost, String... authors) {
+        super(title, category, cost);
+        nbBook++;
+        this.id = nbBook;
+        for (String authorName : authors) {
+            this.addAuthor(authorName);
+        }
+    }
+
     public void addAuthor(String authorName) {
         if (this.authors.contains(authorName)) {
             System.out.println("This author already existed");

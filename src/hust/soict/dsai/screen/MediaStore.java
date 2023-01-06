@@ -1,9 +1,11 @@
 package hust.soict.dsai.screen;
 
 import hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.exception.PlayerException;
 import hust.soict.dsai.aims.media.Media;
 import hust.soict.dsai.aims.media.Playable;
 
+import javax.naming.LimitExceededException;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -16,6 +18,7 @@ public class MediaStore extends JPanel {
     public MediaStore(Media media, Cart cart) {
         this.media = media;
         this.cart = cart;
+
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         JLabel title = new JLabel(media.getTitle());
@@ -28,14 +31,13 @@ public class MediaStore extends JPanel {
         JPanel container = new JPanel();
         container.setLayout(new FlowLayout(FlowLayout.CENTER));
 
-        JButton addToCart = new JButton("Add to cart");
-        addToCart.addActionListener(new MediaStore.addToCartListener(media));
-        container.add(addToCart);
-
+        JButton addToCartBtn = new JButton("Add to cart");
+        addToCartBtn.addActionListener(new MediaStore.addToCartBtnListener(media));
+        container.add(addToCartBtn);
         if (media instanceof Playable) {
-            JButton playButton = new JButton("Play");
-            playButton.addActionListener(new playListener());
-            container.add(playButton);
+            JButton playBtn = new JButton("Play");
+            playBtn.addActionListener(new MediaStore.playButtonListener());
+            container.add(playBtn);
         }
 
         this.add(Box.createVerticalGlue());
@@ -47,7 +49,7 @@ public class MediaStore extends JPanel {
         this.setBorder(BorderFactory.createLineBorder(Color.BLACK));
     }
 
-    private class playListener implements ActionListener {
+    private class playButtonListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             JFrame f = new JFrame();
             for (Frame fr : Frame.getFrames()) {
@@ -56,29 +58,44 @@ public class MediaStore extends JPanel {
                     break;
                 }
             }
-            media.play();
-            JDialog d = new JDialog(f, media.getTitle() + " is now being played...", true);
-            JButton b = new JButton("Exit");
-            d.setLayout(new GridBagLayout());
-            GridBagConstraints c = new GridBagConstraints();
-            b.addActionListener(e1 -> d.setVisible(false));
-            d.add(new JLabel("Click here to escape"));
-            c.insets = new Insets(0, 10, 0, 0);
-            d.add(b, c);
-            d.setSize(300, 100);
-            d.setLocationRelativeTo(f);
-            d.setVisible(true);
+
+            try {
+                ((Playable) media).play();
+                JDialog d = new JDialog(f, media.getTitle() + " is now being played...", true);
+                JButton b = new JButton("Cancel");
+                d.setLayout(new GridBagLayout());
+                GridBagConstraints c = new GridBagConstraints();
+                b.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        d.setVisible(false);
+                    }
+                });
+                d.add(new JLabel("Click here to escape"));
+                c.insets = new Insets(0, 10, 0, 0);
+                d.add(b, c);
+                d.setSize(300, 100);
+                d.setLocationRelativeTo(f);
+                d.setVisible(true);
+            } catch (PlayerException ex) {
+                JOptionPane.showMessageDialog(
+                        f,
+                        ex.getMessage(),
+                        "Illegal media length",
+                        JOptionPane.ERROR_MESSAGE
+                );
+                ex.printStackTrace();
+            }
         }
     }
 
-    private class addToCartListener implements ActionListener {
+    private class addToCartBtnListener implements ActionListener {
         private Media media;
 
-        public addToCartListener(Media media) {
+        public addToCartBtnListener(Media media) {
             this.media = media;
         }
 
-        @Override
         public void actionPerformed(ActionEvent e) {
             JFrame f = new JFrame();
             for (Frame fr : Frame.getFrames()) {
@@ -88,23 +105,34 @@ public class MediaStore extends JPanel {
                 }
             }
 
-            cart.addMedia(media);
-            JDialog d = new JDialog(f, "Add item to cart successful!", true);
-            JButton b = new JButton("Cancel");
-            d.setLayout(new GridBagLayout());
-            GridBagConstraints c = new GridBagConstraints();
-            b.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    d.setVisible(false);
-                }
-            });
-            d.add(new JLabel("Click here to escape"));
-            c.insets = new Insets(0, 10, 0, 0);
-            d.add(b, c);
-            d.setSize(300, 100);
-            d.setLocationRelativeTo(f);
-            d.setVisible(true);
+            try {
+                cart.addMedia(this.media);
+                JDialog d = new JDialog(f, "Add item to cart successful!", true);
+                JButton b = new JButton("Cancel");
+                d.setLayout(new GridBagLayout());
+                GridBagConstraints c = new GridBagConstraints();
+                b.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        d.setVisible(false);
+                    }
+                });
+                d.add(new JLabel("Click here to escape"));
+                c.insets = new Insets(0, 10, 0, 0);
+                d.add(b, c);
+                d.setSize(300, 100);
+                d.setLocationRelativeTo(f);
+                d.setVisible(true);
+            } catch (LimitExceededException ex) {
+                JOptionPane.showMessageDialog(
+                        f,
+                        ex.getMessage(),
+                        "Error when add to cart",
+                        JOptionPane.ERROR_MESSAGE
+                );
+                ex.printStackTrace();
+//                throw new RuntimeException(ex);
+            }
         }
     }
 }

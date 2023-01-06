@@ -2,11 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c2d4172-21d4-448e-8ec1-5a72e3226e2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/javafx/Painter.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/javafx/Painter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/javafx/PainterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/exception/PlayerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/AddBookToStoreScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/AddCompactDiscToStoreScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/AddDigitalVideoDiscToStoreScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/AddItemToStoreScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/CartScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/CartScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/ScreenControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/cart.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AIMS_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AIMS_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/AimsProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/out/production/AimsProject/Aims.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/out/production/AimsProject/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/out/production/AimsProject/DigitalVideoDisc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/src/Aims.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/src/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/AimsProject/src/DigitalVideoDisc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/ReadingAssignment1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/Week2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/Aims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/Aims.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/cart/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/CompactDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/CompactDisc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/DigitalVideoDisc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Disc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Disc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Playable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Playable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/Track.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/screen/MediaStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/MediaStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/screen/StoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/StoreScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/test/cart/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/test/cart/CartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,25 +68,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "F:/Java OOP/javafx-sdk-19/lib",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Java OOP/javafx-sdk-19/lib&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Java OOP\AIMS_Project\Week3" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="hust.soict.dsai.aims.Aims" />
+      <module name="AIMS_Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Painter" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hust.soict.dsai.javafx.Painter" />
       <module name="AIMS_Project" />
@@ -64,6 +102,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Painter" />
+      <item itemvalue="Application.Main" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

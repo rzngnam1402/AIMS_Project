@@ -1,8 +1,16 @@
 package hust.soict.dsai.aims.media;
 
+import hust.soict.dsai.aims.exception.PlayerException;
+
+import java.util.Objects;
+
 public class Track implements Playable {
     private String title;
     private int length;
+
+    public Track() {
+
+    }
 
     public Track(String title, int length) {
         this.title = title;
@@ -17,20 +25,17 @@ public class Track implements Playable {
         return length;
     }
 
-    @Override
-    public void play() {
-        System.out.println("Playing DVD: " + this.getTitle());
-        System.out.println("DVD length: " + this.getLength());
+    public void play() throws PlayerException {
+        if (this.getLength() > 0) {
+            System.out.println("Playing Track: " + this.getTitle());
+            System.out.println("Track length: " + this.getLength());
+        } else {
+            throw new PlayerException("ERROR: Track's length is not positive!");
+        }
+
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        // TODO Auto-generated method stub
-        return this.length == ((Track) obj).length && this.title == ((Track) obj).title;
-    }
-
-    @Override
-    public String toString() {
-        return this.getTitle() + " - " + this.getLength();
+    public boolean equals(Object o) {
+        return Objects.equals(this.title, ((Track) o).getTitle()) && this.length == ((Track) o).getLength();
     }
 }

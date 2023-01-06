@@ -1,51 +1,60 @@
 package hust.soict.dsai.aims.store;
 
-import hust.soict.dsai.aims.media.Media;
 
-import java.util.ArrayList;
+import hust.soict.dsai.aims.media.Media;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Store {
-    private ArrayList<Media> itemsInStore = new ArrayList<>();
+    // DigitalVideoDisc itemsInStore[];
+    private final ObservableList<Media> itemsInStore = FXCollections.observableArrayList();
 
-    public int getQtyOrdered() {
-        return itemsInStore.size();
+    public Store() {
+
     }
 
-    public void addMedia(Media medium) {
-        if (itemsInStore.contains(medium)) {
-            System.out.println("The medium is already existed");
-        } else {
-            itemsInStore.add(medium);
-            System.out.println(medium.getTitle() + " has been added");
+    public void addMedia(Media disc) {
+        this.itemsInStore.add(disc);
+        System.out.println("Item added successfully");
+    }
+
+    public void addMedia(Media... mediaList) {
+        for (Media m : mediaList) {
+            this.addMedia(m);
         }
+        System.out.println("Add new items successful!");
     }
 
-    public void removeMedia(Media medium) {
-        if (itemsInStore.contains(medium)) {
-            itemsInStore.remove(medium);
-            System.out.println(medium.getTitle() + " has been removed");
+    public void removeMedia(Media disc) {
+        if (this.itemsInStore.contains(disc)) {
+            if (this.itemsInStore.remove(disc)) {
+                System.out.println("Removed item successfully");
+            } else {
+                System.out.println("Removed item failed");
+            }
         } else {
-            System.out.println("The medium is not existed");
+            System.out.println("Item not found!");
         }
     }
 
     public void printStore() {
-        System.out.println("Store");
-        for (Media media : itemsInStore) {
-            System.out.println(media.toString());
+        System.out.println("List of items in store:");
+        for (Media m : itemsInStore) {
+            System.out.println(m.toString());
         }
+//        System.out.println();
     }
 
-    public Media searchStore(String st) {
-        for (Media media : itemsInStore) {
-            if (media.isMatch(st)) {
+    public ObservableList<Media> getItemsInStore() {
+        return this.itemsInStore;
+    }
+
+    public Media searchStore(String title) {
+        for (Media media : this.itemsInStore) {
+            if (media.isMatch(title)) {
                 return media;
             }
         }
         return null;
-    }
-
-    public ArrayList<Media> getItemsInStore() {
-        return itemsInStore;
     }
 }
