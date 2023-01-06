@@ -12,7 +12,6 @@ import java.util.List;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
-    // private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
     private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
 
     FilteredList<Media> filteredItems = new FilteredList<>(itemsOrdered, m -> true);
@@ -120,7 +119,6 @@ public class Cart {
             for (Media m : findResult) {
                 System.out.println(m.toString());
             }
-//            System.out.println();
         } else {
             System.out.println("No items found!");
         }
@@ -142,7 +140,6 @@ public class Cart {
                 for (Media media : findResult) {
                     System.out.println(media.toString());
                 }
-//                System.out.println();
             } else {
                 System.out.println("No items found!");
             }
@@ -153,7 +150,6 @@ public class Cart {
         if (title == null || title.length() == 0) {
             filteredItems.setPredicate(m -> true);
         } else {
-            // type == true <=> filtering using id
             if (type) {
                 try {
                     int idValue = Integer.parseInt(title);

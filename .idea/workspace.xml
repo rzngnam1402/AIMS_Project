@@ -2,70 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c2d4172-21d4-448e-8ec1-5a72e3226e2d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Answer.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design/AIMS.asta" beforeDir="false" afterPath="$PROJECT_DIR$/Design/AIMS.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Design/AIMS.asta.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/Aims.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/cart/Cart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/exception/PlayerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/media/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/media/CompactDisc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/media/DigitalVideoDisc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/media/Disc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/media/Media.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/media/Playable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/media/Track.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/store/Store.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/utils/MediaComparatorByCostTitle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/aims/utils/MediaComparatorByTitleCost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/javafx/Painter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/javafx/Painter.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/javafx/PainterController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/lab01/ConcatenationInLoops.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/lab01/CreateFileDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/lab01/GarbageCreator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/lab01/NoGarbage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddBookToStoreScreen$submitAddBook$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddBookToStoreScreen$submitAddBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddBookToStoreScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddCompactDiscToStoreScreen$submitAddCD$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddCompactDiscToStoreScreen$submitAddCD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddCompactDiscToStoreScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddDigitalVideoDiscToStoreScreen$submitAddDVD$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddDigitalVideoDiscToStoreScreen$submitAddDVD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddDigitalVideoDiscToStoreScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/AddItemToStoreScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/CartScreen$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/CartScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/CartScreenController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/CartScreenController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/CartScreenController$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/CartScreenController$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/CartScreenController$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/CartScreenController$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/CartScreenController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/MediaStore$addToCartBtnListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/MediaStore$addToCartBtnListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/MediaStore$playButtonListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/MediaStore$playButtonListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/MediaStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/ScreenControl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/ScreenControl$menuListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/ScreenControl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/StoreScreen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/screen/cart.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/swing/AWTAccumulator$TFInputListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/swing/AWTAccumulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/swing/NumberGrid$ButtonListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/swing/NumberGrid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/swing/SwingAccumulator$TFInputListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/swing/SwingAccumulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AIMS_Project/hust/soict/dsai/test/cart/CartTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/Aims.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/Aims.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/media/DigitalVideoDisc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/screen/AddItemToStoreScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/AddItemToStoreScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/screen/CartScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/screen/CartScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hust/soict/dsai/aims/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hust/soict/dsai/aims/cart/Cart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

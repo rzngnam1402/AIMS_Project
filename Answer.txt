@@ -1,0 +1,14 @@
+1. Is JAVA a Pass by Value or a Pass by Reference programming language?
+
+- Java always passes by value.
+
+2. Suppose we are taking this Comparable interface approach. What class should implement the Comparable interface?
+
+- Cart class.
+
+3. The Aims class must be updated to handle any exceptions generated when the play() methods are called.
+What happens when you don’t update for them to catch?
+
+- The application will throw PlayerException, and it may crash.
+
+

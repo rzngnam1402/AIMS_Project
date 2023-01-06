@@ -120,7 +120,6 @@ public class Aims {
                             e.printStackTrace();
                             throw new RuntimeException(e);
                         }
-//                        System.out.println("Add items to cart successful!");
                         System.out.println("Current number of items in cart: " + cart.getNumberOfOrderedItems() + ".");
                     } else {
                         System.out.println("Media not found!");
