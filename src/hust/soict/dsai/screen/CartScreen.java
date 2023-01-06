@@ -12,9 +12,7 @@ import java.io.IOException;
 
 public class CartScreen extends ScreenControl {
     private Cart cart;
-
     private Store store;
-
     public CartScreen(Cart cart, Store store) {
         super();
         setCartScreen(this);

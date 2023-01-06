@@ -8,7 +8,6 @@ import java.awt.*;
 
 public class AddItemToStoreScreen extends ScreenControl {
     protected static Store store;
-
     protected JTextField titleField;
     protected JTextField categoryField;
     protected JTextField costField;

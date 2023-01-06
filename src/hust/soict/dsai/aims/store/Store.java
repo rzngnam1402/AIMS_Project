@@ -6,7 +6,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class Store {
-    // DigitalVideoDisc itemsInStore[];
     private final ObservableList<Media> itemsInStore = FXCollections.observableArrayList();
 
 
@@ -43,7 +42,6 @@ public class Store {
         for (Media m : itemsInStore) {
             System.out.println(m.toString());
         }
-//        System.out.println();
     }
 
     public ObservableList<Media> getItemsInStore() {

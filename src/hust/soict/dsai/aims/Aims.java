@@ -359,7 +359,6 @@ public class Aims {
             throw new RuntimeException(e);
         }
 
-        // showMenu();
         new CartScreen(cart, store);
         new AddDigitalVideoDiscToStoreScreen(store);
         new AddCompactDiscToStoreScreen(store);
